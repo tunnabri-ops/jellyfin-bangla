@@ -1,0 +1,30 @@
+# Jellyfin Bangla — ফ্রি মিডিয়া সার্ভার, বাংলা সেটআপ
+
+নিজের সিনেমা, নাটক আর গানের লাইব্রেরি নিজের সার্ভারে চালান — Jellyfin দিয়ে। Built on **jellyfin/jellyfin**.
+
+- **Original repo:** https://github.com/jellyfin/jellyfin (free, open-source media server — your movies, shows and music, streamed to any device)
+
+## কী আছে / What is inside
+
+- `docker-compose.yml` — Jellyfin সার্ভার: পোর্ট 8096 (HTTP) ও 8920 (HTTPS), config/cache/media ভলিউম। YAML যাচাই করা।
+- `setup-bangla.md` — বাংলা সেটআপ গাইড: লাইব্রেরি নামকরণ, বাংলা সাবটাইটেল, হার্ডওয়্যার ট্রান্সকোডিং।
+
+## যা ঠিক করা হয়েছে / What was fixed
+
+- আপস্ট্রিমের Docker নির্দেশনা ছড়িয়ে আছে — এখানে একটাই `docker-compose.yml`, যাতে `docker compose up -d` দিলেই সার্ভার ওঠে।
+- বাংলা ব্যবহারকারীর জন্য আলাদা করে কিছু লেখা নেই আপস্ট্রিমে — এই গাইডে বাংলা সিনেমা/নাটকের ফোল্ডার নামকরণ, বাংলা সাবটাইটেল আর বাংলা মেটাডেটার কথা বলা আছে।
+
+## ব্যবহার / How to use
+
+```bash
+# 1. media ফোল্ডারে আপনার সিনেমা/নাটক রাখুন
+mkdir -p config cache media/movies media/natok
+
+# 2. সার্ভার চালু করুন
+docker compose up -d
+
+# 3. ব্রাউজারে খুলুন
+# http://localhost:8096
+```
+
+প্রথমবার খুললে সেটআপ উইজার্ড আসবে — অ্যাডমিন অ্যাকাউন্ট বানান, তারপর লাইব্রেরি যোগ করুন। বিস্তারিত `setup-bangla.md`-এ।
