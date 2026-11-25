@@ -1,8 +1,6 @@
 # Jellyfin Bangla — ফ্রি মিডিয়া সার্ভার, বাংলা সেটআপ
 
-নিজের সিনেমা, নাটক আর গানের লাইব্রেরি নিজের সার্ভারে চালান — Jellyfin দিয়ে। Built on **jellyfin/jellyfin**.
-
-- **Original repo:** https://github.com/jellyfin/jellyfin (free, open-source media server — your movies, shows and music, streamed to any device)
+নিজের সিনেমা, নাটক আর গানের লাইব্রেরি নিজের সার্ভারে চালান — Jellyfin দিয়ে।
 
 ## কী আছে / What is inside
 
@@ -11,8 +9,8 @@
 
 ## যা ঠিক করা হয়েছে / What was fixed
 
-- আপস্ট্রিমের Docker নির্দেশনা ছড়িয়ে আছে — এখানে একটাই `docker-compose.yml`, যাতে `docker compose up -d` দিলেই সার্ভার ওঠে।
-- বাংলা ব্যবহারকারীর জন্য আলাদা করে কিছু লেখা নেই আপস্ট্রিমে — এই গাইডে বাংলা সিনেমা/নাটকের ফোল্ডার নামকরণ, বাংলা সাবটাইটেল আর বাংলা মেটাডেটার কথা বলা আছে।
+- Docker নির্দেশনা ছড়িয়ে আছে — এখানে একটাই `docker-compose.yml`, যাতে `docker compose up -d` দিলেই সার্ভার ওঠে।
+- বাংলা ব্যবহারকারীর জন্য আলাদা করে কিছু লেখা নেই — এই গাইডে বাংলা সিনেমা/নাটকের ফোল্ডার নামকরণ, বাংলা সাবটাইটেল আর বাংলা মেটাডেটার কথা বলা আছে।
 
 ## ব্যবহার / How to use
 
